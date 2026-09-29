@@ -26,6 +26,12 @@ An n8n and OpenAI RAG prototype for retrieving answers from a controlled recruit
 
 This project connects my Talent Acquisition experience with my transition into AI Automation Engineering.
 
+### [Sales Handoff & Playbook Copilot](https://github.com/KKallias/sales-handoff-playbook-copilot)
+
+A two-workflow n8n RAG prototype that ingests a fictional sales playbook, retrieves relevant guidance from Pinecone, and converts discovery notes into a structured handoff for human review.
+
+The project demonstrates structured extraction, embeddings, vector retrieval, grounded generation, prompt-injection safeguards, and a clear separation between customer facts, company guidance, and AI suggestions.
+
 ### [AI Email Triage and Response Assistant](https://github.com/KKallias/ai-email-triage-n8n)
 
 An n8n workflow that receives Gmail messages, uses OpenAI to extract structured information, logs the results in Google Sheets, decides whether a reply is required, generates a response, and sends it through Gmail.
