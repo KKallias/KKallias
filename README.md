@@ -1,49 +1,44 @@
 # Hi, I'm Konstantinos Kallias 👋
 
-I am transitioning into **AI Automation Engineering**, combining hands-on technical work with experience in talent acquisition, international football operations, sales development, and data analysis.
+I am transitioning into **AI Automation Engineering**, building practical workflows that connect AI models with business processes and everyday tools.
 
-I build practical AI workflows and guardrails with an emphasis on **reliability, auditability, and clear business value**. My current work explores how AI agents can automate useful processes while staying grounded, observable, and within defined limits.
+My background in talent acquisition, operations, sales development, and data analysis helps me approach automation from both sides: understanding the real workflow first, then designing a clear and useful technical solution.
 
-## What I am building
+## Current focus
 
-- **AI workflow automation** with n8n, OpenAI, Gmail, Google Sheets, and structured outputs
-- **Retrieval-Augmented Generation (RAG)** using embeddings, Pinecone, document ingestion, and vector retrieval
-- **AI agent guardrails** for spend limits, rate limits, sensitive-data handling, and audit trails
-- **Agent payment safety** across x402 and the Machine Payments Protocol (MPP)
-- **Data solutions** using Python, SQL, PostgreSQL, BigQuery, Tableau, and Looker Studio
+I am currently learning and building with:
 
-## Featured projects
+`n8n` · `OpenAI API` · `AI Agents` · `RAG` · `Embeddings` · `Vector Databases` · `Pinecone` · `Structured Outputs` · `Gmail Automation` · `Google Sheets` · `Workflow Testing`
 
-### [guardrail-core](https://github.com/KKallias/guardrail-core)
-A reusable Python policy engine that checks AI-agent tool calls before execution. It supports spend caps, rate limits, allowlists, PII/secret rules, scoped credentials, and append-only audit logs.
+My focus is on:
+
+- Designing end-to-end AI automation workflows
+- Connecting AI models with business tools and data sources
+- Building knowledge assistants with retrieval-augmented generation
+- Creating structured, testable, and maintainable automations
+- Applying automation to recruitment, operations, and customer communication
+
+## AI Automation projects
 
 ### [Recruitment Knowledge & Feedback Assistant](https://github.com/KKallias/recruitment-knowledge-feedback-assistant)
-An n8n and OpenAI RAG prototype that retrieves answers from a controlled recruitment-policy knowledge base using embeddings and Pinecone. Built around a real business domain from my Talent Acquisition experience.
+
+An n8n and OpenAI RAG prototype for retrieving answers from a controlled recruitment-policy knowledge base. It uses document ingestion, recursive text splitting, embeddings, Pinecone vector storage, and AI-agent retrieval.
+
+This project connects my Talent Acquisition experience with my transition into AI Automation Engineering.
 
 ### [AI Email Triage and Response Assistant](https://github.com/KKallias/ai-email-triage-n8n)
-An n8n workflow that analyses incoming Gmail messages, extracts structured data, logs results in Google Sheets, decides whether a reply is needed, and generates a response with OpenAI.
 
-### [x402 Spend Guard](https://github.com/KKallias/x402-spend-guard)
-A Python tool that adds pre-payment budget enforcement and audit logging to AI-agent x402 micropayments, with a testnet implementation and LangChain integration.
+An n8n workflow that receives Gmail messages, uses OpenAI to extract structured information, logs the results in Google Sheets, decides whether a reply is required, generates a response, and sends it through Gmail.
 
-### [MPP Spend Guard](https://github.com/KKallias/mpp-spend-guard)
-A JavaScript spend-control layer for agents using Stripe and Tempo's Machine Payments Protocol, including per-request caps, session limits, rate limits, recipient allowlists, and testnet verification.
+The workflow demonstrates AI analysis, structured outputs, conditional routing, application integrations, and workflow testing.
 
-### [Data & Analytics Job Market Analysis](https://github.com/KKallias/Final-Project-Data-Analytics)
-An analysis of salary trends, job demand, and hiring patterns in Germany and international markets, turning data into practical insights.
+## Learning approach
 
-## Currently learning and developing
+I learn by building real portfolio projects and documenting the process clearly:
 
-`AI Automation` · `n8n` · `RAG` · `AI Agents` · `OpenAI API` · `LangChain` · `Embeddings` · `Vector Databases` · `Pinecone` · `Workflow Evaluation` · `AI Safety & Guardrails` · `Python` · `JavaScript` · `SQL` · `PostgreSQL`
+**learn → build → test → document → improve**
 
-## What I want to contribute
-
-I am interested in opportunities and collaborations involving:
-
-- AI automation for operations, recruitment, and customer workflows
-- Reliable RAG systems and knowledge assistants
-- Agent safety, payment controls, and observable AI workflows
-- Data-informed process improvement
+I am currently developing stronger skills in retrieval quality, grounded AI responses, workflow reliability, error handling, evaluation, and production-ready automation design.
 
 ## Connect
 
