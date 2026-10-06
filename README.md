@@ -38,6 +38,16 @@ An n8n workflow that receives Gmail messages, uses OpenAI to extract structured 
 
 The workflow demonstrates AI analysis, structured outputs, conditional routing, application integrations, and workflow testing.
 
+## Explore the builds
+
+Each project includes an n8n workflow export. Start with the setup instructions and check the current validation status before running it.
+
+| Project | Workflow export | Setup and validation |
+| --- | --- | --- |
+| Recruitment assistant | [Policy ingestion and question answering](https://github.com/KKallias/recruitment-knowledge-feedback-assistant/blob/main/workflows/01-upload-recruitment-policies-02-policy-assistant.json) | [Import and first test](https://github.com/KKallias/recruitment-knowledge-feedback-assistant#import-and-first-test). RAG foundation implemented; retrieval quality, citations, and abstention still need evaluation. |
+| Sales handoff copilot | [Ingestion](https://github.com/KKallias/sales-handoff-playbook-copilot/blob/main/workflows/ingestion.json) · [Retrieval and handoff](https://github.com/KKallias/sales-handoff-playbook-copilot/blob/main/workflows/retrieval.json) | [Run the prototype](https://github.com/KKallias/sales-handoff-playbook-copilot#run-the-prototype). Prototype execution is documented; the evaluation plan covers grounding, commitments, and prompt injection. |
+| Email triage assistant | [Email triage and response](https://github.com/KKallias/ai-email-triage-n8n/blob/main/workflow/ai_email_triage_response.json) | [Setup](https://github.com/KKallias/ai-email-triage-n8n#setup) · [Testing](https://github.com/KKallias/ai-email-triage-n8n#testing). Published export passed static checks; live validation remains a setup step. |
+
 ## Learning approach
 
 I learn by building real portfolio projects and documenting the process clearly:
