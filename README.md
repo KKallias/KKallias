@@ -30,7 +30,7 @@ My focus is on:
 
 * Designing complete AI automation workflows
 * Connecting AI models with business tools and data sources
-* Building knowledge assistants with retrieval augmented generation
+* Building knowledge assistants with retrieval-augmented generation
 * Creating structured, testable, and maintainable automations
 * Applying automation to recruitment, operations, and customer communication
 
