@@ -1,0 +1,50 @@
+name: Daily docs improvement
+
+on:
+  schedule:
+    - cron: "17 6 * * *"   # every day 06:17 UTC (08:17 Berlin summer time)
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Only show the proposed fix, don't commit"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write   # needed only to push the commit
+
+concurrency:
+  group: daily-docs
+  cancel-in-progress: false
+
+jobs:
+  improve-docs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Propose and validate one small fix
+        id: ai
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}        # optional override
+          DOC_FILE: README.md
+          MAX_COST_USD: "0.02"
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || 'false' }}
+        run: python3 .github/scripts/improve_docs.py
+
+      - name: Commit and push
+        if: steps.ai.outputs.changed == 'true'
+        env:
+          MSG: ${{ steps.ai.outputs.message }}
+          BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          git config user.name "Konstantinos Kallias"
+          git config user.email "konstantinoskallias@icloud.com"
+          git add README.md
+          git diff --cached --quiet && { echo "Nothing to commit."; exit 0; }
+          git commit -m "$MSG"
+          git push origin "HEAD:$BRANCH"
