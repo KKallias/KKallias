@@ -2,7 +2,8 @@ name: Daily docs improvement
 
 on:
   schedule:
-    - cron: "17 6 * * *"   # every day 06:17 UTC (08:17 Berlin summer time)
+    - cron: "0 8 * * *"    # every day 08:00 German time (DST-aware)
+      timezone: "Europe/Berlin"
   workflow_dispatch:
     inputs:
       dry_run:
