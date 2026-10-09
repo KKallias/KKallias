@@ -10,7 +10,7 @@ My background in talent acquisition, operations, sales development, and data ana
 
 **Football scouting research with reusable player profiles and human review.**
 
-I built Scout Signal to explore how AI can help researchers collect player information, revisit earlier findings and check what has changed. It accepts pasted text or a Transfermarkt link, creates a concise profile and automatically stores valid research in Pinecone. Decision makers can optionally save players to a Google Sheets review shortlist.
+I built Scout Signal to explore how AI can help researchers collect player information, revisit earlier findings and check what has changed. It accepts pasted text or a Transfermarkt link, creates a concise profile and automatically stores valid research in Pinecone. Decision-makers can optionally save players to a Google Sheets review shortlist.
 
 A separate retrieval workflow combines stored research with fresh searches for questions about current profiles or changes. The project demonstrates workflow orchestration, AI tool integration, vector retrieval and a clear separation between research storage and the human decision to shortlist a player.
 
